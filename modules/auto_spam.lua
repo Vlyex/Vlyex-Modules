@@ -140,13 +140,13 @@ local function DetectSpam()
             local DistanceBall = (Ball.Position - plrRP.Position).Magnitude
             
             if get_PlayersNumber() < 3 then
-              if DistancePlayer <= 35 and DistanceBall <= 35 and SpamNum >= 2 then
+              if DistancePlayer <= 30 and DistanceBall <= 30 and SpamNum >= 2 then
                 getgenv().SpamClickA = true
               else
                 getgenv().SpamClickA = false
               end
             else
-              if DistancePlayer <= 35 and DistanceBall <= 35 and SpamNum >= 3 then
+              if DistancePlayer <= 30 and DistanceBall <= 30 and SpamNum >= 3 then
                 getgenv().SpamClickA = true
               else
                 getgenv().SpamClickA = false
